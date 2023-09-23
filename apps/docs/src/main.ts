@@ -1,6 +1,6 @@
 import "./style.css";
 import typescriptLogo from "./typescript.svg";
-import { Header, Counter, setupCounter } from "ui";
+import { Header } from "ui";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
@@ -12,9 +12,7 @@ document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
     </a>
     ${Header({ title: "Docs" })}
     <div class="card">
-      ${Counter()}
+      <ui-counter></ui-counter>
     </div>
   </div>
 `;
-
-setupCounter(document.querySelector<HTMLButtonElement>("#counter")!);

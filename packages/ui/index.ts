@@ -1,5 +1,4 @@
-// utils
-export { setupCounter } from "./utils/counter";
+import "@shoelace-style/shoelace/dist/themes/dark.css"
 
 // components
 export { Header } from "./components/header";
